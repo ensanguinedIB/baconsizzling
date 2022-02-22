@@ -8,27 +8,32 @@
 	<link rel="icon" type="image/x-icon" href="./favicon.ico">
 
 	<link rel="stylesheet" type="text/css" href="./stylesheets/video.css">
+	<link rel="stylesheet" type="text/css" href="./stylesheets/button.css">
 
 	<title>
 		Bacon Sizzling - Bacon Makes Everything Better
 	</title>
+
+	<script type="text/javascript" src="scripts/autoplay.js"></script>
 
 </head>
 <body>
 
 	<div id="video-container">
 
-		<video autoplay loop>
+		<video id="video" loop>
 			<source src="./assets/bacon.mp4" type="video/mp4">
 			This browser does not support video.
 		</video>
 
 	</div>
 
-	<audio autoplay loop>
+	<audio id="audio" loop>
 		<source src="./assets/foodfrying.mp3" type="audio/mpeg">
 		This browser does not support audio.
 	</audio>
+
+	<button id="play-button" type="button" onclick="play_audio()">&#x2BC8;</button>
 
 </body>
 </html>
